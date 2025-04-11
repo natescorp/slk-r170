@@ -1,0 +1,12 @@
+Toolbar Wizard Data File - Version 0.9.5
+0101Document Done.
+ 8 entries
+	#FFFFFF		#000000	#008000	#FF0000	#004000	Document Done.		0	0	0	0						0	1	0	&copy; 1999 Your Name.  All Rights Reserved		 | 		0	0	0	0		<CENTER>		1	1								
+ABC		C:\WEBSHARE\WWWROOT\tractioncontro\abc_off.gif	C:\WEBSHARE\WWWROOT\tractioncontro\abc_on.gif		ABC	138	19													ABC	
+ABS		C:\WEBSHARE\WWWROOT\tractioncontro\abs_off.gif	C:\WEBSHARE\WWWROOT\tractioncontro\abs_on.gif		ABS	138	21													ABS	
+ADS		C:\WEBSHARE\WWWROOT\tractioncontro\ads_off.gif	C:\WEBSHARE\WWWROOT\tractioncontro\ads_on.gif		ADS	138	21													ADS	
+ASD		C:\WEBSHARE\WWWROOT\tractioncontro\asd_off.gif	C:\WEBSHARE\WWWROOT\tractioncontro\asd_on.gif		ASD	138	20													ASD	
+ASR		C:\WEBSHARE\WWWROOT\tractioncontro\asr_off.gif	C:\WEBSHARE\WWWROOT\tractioncontro\asr_on.gif		ASR	138	21													ASR	
+BAS		C:\WEBSHARE\WWWROOT\tractioncontro\bas_off.gif	C:\WEBSHARE\WWWROOT\tractioncontro\bas_on.gif		BAS	138	20													BAS	
+ESP		C:\WEBSHARE\WWWROOT\tractioncontro\esp_off.gif	C:\WEBSHARE\WWWROOT\tractioncontro\esp_on.gif		ESP	138	20													ESP	
+ETS		C:\WEBSHARE\WWWROOT\tractioncontro\ets_off.gif	C:\WEBSHARE\WWWROOT\tractioncontro\ets_on.gif		ETS	138	20													ETS	
