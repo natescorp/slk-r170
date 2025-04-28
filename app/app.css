@@ -7,9 +7,21 @@
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  background-color: #C0C0C0;
+  background-image: "./deprecated/images/homtile.gif";
+}
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
+.home {
+  display: grid;
+  justify-items: center;
+  color: black;
+  border: 1px solid #910014;
+
+  h3 {
+    color: #910014;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    text-shadow: #FFF 3px 3px 6px;
+    text-align: center;
   }
 }
