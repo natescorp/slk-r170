@@ -1,0 +1,13 @@
+h3 {
+  color: #910014;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  text-shadow: #FFF 3px 3px 6px;
+  text-align: center;
+}
+
+body > table > a {
+  color: inherit;
+  text-decoration: none;
+  text-decoration-line: none;
+}
