@@ -1,3 +1,9 @@
+.image-description {
+  color: #00007F;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
 h3 {
   color: #910014;
   font-family: 'Times New Roman', Times, serif;
@@ -7,8 +13,15 @@ h3 {
   margin: 0;
 }
 
-body > table > a {
+body > table > a,
+a:-webkit-any-link {
   color: inherit;
   text-decoration: none;
   text-decoration-line: none;
+}
+
+a > h3:hover,
+body > table > a:hover,
+a:-webkit-any-link:hover {
+  text-shadow: #910014 3px 3px 6px;
 }
