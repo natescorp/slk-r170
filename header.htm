@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SLK Header</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #C0C0C0;
+            overflow: hidden;
+        }
+        .header {
+            width: 100%;
+            height: 32px;
+            background: linear-gradient(180deg, #D4D4D4 0%, #A0A0A0 100%);
+            border-bottom: 2px solid #404040;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            padding: 0 8px;
+            box-sizing: border-box;
+        }
+        .header__logo {
+            color: #000080;
+            font-weight: bold;
+            margin-right: 16px;
+            padding-right: 8px;
+            border-right: 1px solid #808080;
+        }
+        .header__title {
+            color: #000000;
+            flex: 1;
+        }
+        .header__time {
+            color: #000000;
+            background-color: #E0E0E0;
+            padding: 2px 8px;
+            border: 1px solid #808080;
+            border-radius: 2px;
+            font-family: 'Courier New', monospace;
+            font-size: 11px;
+            margin-right: 8px;
+        }
+        .header__nav {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .header__button {
+            padding: 2px 8px;
+            background-color: #E0E0E0;
+            border: 1px solid #808080;
+            text-decoration: none;
+            color: #000080;
+            font-size: 11px;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 0.1s ease;
+        }
+        .header__button:hover {
+            background-color: #000080;
+            color: #FFFFFF;
+            border-color: #FFFFFF;
+        }
+        .header__separator {
+            width: 2px;
+            height: 20px;
+            background: linear-gradient(180deg, #808080 0%, #404040 50%, #808080 100%);
+            margin: 0 8px;
+        }
+        /* Стили для разных типов кнопок */
+        .header__button--frame {
+            background-color: #C0C0C0;
+            font-weight: bold;
+        }
+        .header__button--root {
+            background-color: #D4D4D4;
+        }
+        .header__button--bash {
+            background-color: #A0A0A0;
+            color: #000000;
+        }
+        .header__button--bash:hover {
+            background-color: #000000;
+            color: #FFFF00;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <span class="header__logo">SLK R170</span>
+        <span class="header__title">Mercedes-Benz SLK-Class Documentation</span>
+
+        <span class="header__time" id="header-time"></span>
+
+        <div class="header__nav">
+            <a href="/" class="header__button header__button--root" target="_top" rel="noopener">
+                🏠 HOME
+            </a>
+            <a href="./bash-gen" class="header__button header__button--bash" target="_top" rel="noopener">
+                ⌨️ BASH-GEN
+            </a>
+            <span class="header__separator"></span>
+            <a href="#" class="header__button header__button--frame" onclick="parent.main.location.href='home.htm'; return false;">
+                🏠 SLK-HOME
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString('en-US', {
+                hour12: false,
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            });
+            document.getElementById('header-time').textContent = timeString;
+        }
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
+</body>
+</html>

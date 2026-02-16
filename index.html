@@ -1,21 +1,35 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>SLK Home Page</title>
+<link rel="stylesheet" type="text/css" href="./styles.css">
 <meta name="GENERATOR" content="Microsoft FrontPage 3.0">
 <meta name="Microsoft Border" content="none, default">
 </head>
 
-<frameset bordercolor="#ffffff" border="0" frameborder="0" frameborder="0"
-bordercolor="white" frameborder="off" leftmargin="0" cols="168,*">
-  <frame name="contents" target="main" marginwidth="0" marginheight="0" border="0"
-  framepadding="0" framespacing="0" frameborder="0" scrolling="no" noresize src="navbar.htm" target="_self" rel="noopener">
-  <frame name="main" marginheight="0" border="0" framepadding="0" framespacing="0"
-  frameborder="0" noresize target="main" src="home.htm" target="_self" rel="noopener">
-  <noframes>
-  <body>
-  <p>This page uses frames, but your browser doesn't support them. </p>
-  </body>
-  </noframes>
+<!-- Фреймсет с тремя рядами: header, navbar и main -->
+<frameset rows="32,*" border="0" frameborder="0" framespacing="0">
+
+    <!-- Верхний фрейм для хедера -->
+    <frame name="header" src="header.htm" marginwidth="0" marginheight="0"
+           scrolling="no" noresize frameborder="0">
+
+    <!-- Основной фреймсет для навигации и контента -->
+    <frameset cols="168,*" border="0" frameborder="0" framespacing="0">
+        <frame name="contents" src="navbar.htm" marginwidth="0" marginheight="0"
+               scrolling="auto" noresize frameborder="0">
+        <frame name="main" src="home.htm" marginwidth="0" marginheight="0"
+               scrolling="auto" noresize frameborder="0">
+    </frameset>
+
+    <noframes>
+        <body>
+            <p>This page uses frames, but your browser doesn't support them.</p>
+        </body>
+    </noframes>
 </frameset>
+
 </html>
